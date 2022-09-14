@@ -1,25 +1,28 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../config';
+import HeaderLink from './HeaderLink.astro'
+import { HOMEPAGE_URL } from '../config'
+import { IoLogoGithub } from 'react-icons/io5/index.js'
+import FootprintIcon from './icons/footprint'
+import ThemeToggle from './ThemeToggleButton'
 ---
 
-<header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
-	</nav>
+<header class="fixed w-full p-2 z-20 backdrop-blur-md">
+  <div class="mx-auto max-w-3xl">
+    <nav class="flex items-center gap-3 text-base">
+      <a href="/" class="group">
+        <h2 class="font-semibold tracking-tighter p-2 font-mplus text-lg">
+          <FootprintIcon />
+          Takuya Matsuyama
+        </h2>
+      </a>
+      <div class="items-center gap-6 hidden md:flex">
+        <HeaderLink href={HOMEPAGE_URL}>About</HeaderLink>
+        <HeaderLink href="https://github.com/withastro/astro" target="_blank"
+          ><IoLogoGithub />Source</HeaderLink
+        >
+      </div>
+      <div class="flex-1"></div>
+      <ThemeToggle client:load />
+    </nav>
+  </div>
 </header>
-<style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
-</style>
