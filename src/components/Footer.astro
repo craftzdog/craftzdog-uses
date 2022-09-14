@@ -1,13 +1,10 @@
 ---
-const today = new Date();
+import { HOMEPAGE_URL } from '../config'
+
+const today = new Date()
 ---
 
-<footer>
-	&copy; {today.getFullYear()} YOUR NAME HERE. All rights reserved.
+<footer class="text-zinc-500 p-4 text-center">
+  &copy; {today.getFullYear()}
+  <a href={HOMEPAGE_URL}>Takuya Matsuyama</a>. All rights reserved.
 </footer>
-<style>
-	footer {
-		padding: 25px;
-		text-align: center;
-	}
-</style>
