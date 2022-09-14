@@ -5,7 +5,7 @@ public: true
 layout: ../../layouts/BlogPost.astro
 title: MacBook Pro (M1 Max)
 createdAt: 1663119142469
-updatedAt: 1663133887018
+updatedAt: 1663138785310
 tags:
   - Computing
 heroImage: /posts/macbook-pro_thumbnail.jpg
@@ -23,4 +23,5 @@ It would have not been possible to film coding videos in nature like this, thank
 ![macbook-pro-m1-max_3.jpg](/posts/macbook-pro_macbook-pro-m1-max-3-jpg.jpg)
 [**WATCH**: How I built a software agency website with Next.js + Tailwind CSS (in nature)](https://www.youtube.com/watch?v=GznmPACXBlY)
 
-I chose 14-inch because 16-inch is too big for me. I connect it with Pro Display XDR at home.
+I chose 14-inch because 16-inch is too big for me. I connect it with [Pro Display XDR](/posts/pro-display-xdr)
+at home.
