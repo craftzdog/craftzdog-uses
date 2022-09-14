@@ -8,6 +8,7 @@ import Content from '../components/Content.astro'
 import { IoArrowForward } from 'react-icons/io5'
 import Masthead from '../components/Masthead.astro'
 import { Image } from '@astrojs/image/components'
+import CreatedWithSection from '../components/CreatedWithSection.astro'
 
 const posts = (await Astro.glob('./posts/*.md')).sort(
   (a: any, b: any) =>
@@ -63,6 +64,7 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
             }
           </ul>
         </section>
+        <CreatedWithSection />
       </Content>
     </main>
     <Footer />
