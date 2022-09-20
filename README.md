@@ -1,5 +1,7 @@
 # Takuya's curated list of the tech
 
+A curated list of the tech I use, built with Astro and Tailwind CSS
+
 https://uses.craftz.dog/
 
 ## Tutorial
@@ -17,7 +19,7 @@ Watch how I built this website on YouTube:
 - [React](https://reactjs.org/) - Component-based UI framework for JS
 - [Headless UI](https://headlessui.com/) - Unstyled interactive components
 - [React Icons](https://react-icons.github.io/react-icons/) - Icon set
-- [Indkrop](https://www.inkdrop.app/) - Markdown note-taking app, for writing the blog content
+- [Indkrop](https://www.inkdrop.app/) - Markdown note-taking app, for writing the blog content (optional)
 
 ## Project Structure
 
