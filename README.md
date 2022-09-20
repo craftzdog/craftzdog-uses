@@ -6,7 +6,9 @@ https://uses.craftz.dog/
 
 Watch how I built this website on YouTube:
 
-![tutorial thumbnail](./docs/tutorial-thumb.jpg)
+[![tutorial thumbnail](./docs/tutorial-thumb.jpg)](https://youtu.be/3_JE76PKBWE)
+
+<https://youtu.be/3_JE76PKBWE>
 
 ## Stack
 
