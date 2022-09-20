@@ -4,7 +4,7 @@ slug: macbook-pro
 public: true
 layout: ../../layouts/BlogPost.astro
 title: MacBook Pro (M1 Max)
-createdAt: 1663119142469
+createdAt: 1663205542000
 updatedAt: 1663138785310
 tags:
   - Computing

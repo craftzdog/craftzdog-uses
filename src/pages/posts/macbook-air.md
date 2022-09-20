@@ -4,7 +4,7 @@ slug: macbook-air
 public: true
 layout: ../../layouts/BlogPost.astro
 title: MacBook Air (M2)
-createdAt: 1663133912073
+createdAt: 1663220312000
 updatedAt: 1663134147373
 tags:
   - Computing
