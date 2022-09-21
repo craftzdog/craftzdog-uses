@@ -17,6 +17,6 @@ MacBook Air is my sub-machine. As you may know, I'm running a small business cal
 ![macbook-air-m2_2.jpg](/posts/macbook-air_macbook-air-m2-2-jpg.jpg)
 
 I didn't feel like buying another beefy computer like M1 Max MBP. So, I decided to get the M2 MacBook Air.
-It's less powerfull than Pro, but sufficient for looking into the servers, giving user support, web browsing, and doing some front-end coding.
+It's less powerful than Pro, but sufficient for looking into the servers, giving user support, web browsing, and doing some front-end coding.
 It's hard to edit videos and build mobile apps on it.
 But I love how lightweight it is. Great for hiking, travel, etc.
