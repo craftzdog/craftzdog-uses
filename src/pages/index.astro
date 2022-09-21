@@ -29,8 +29,8 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
       <Content>
         <section>
           <p class="mb-8 indent-4">
-            As an indie developer, I&apos;ve been spending hours and hours at
-            my desk every day. So, I&apos;ve been continuously improving my
+            As an indie developer, I&apos;ve been spending hours and hours at my
+            desk every day. So, I&apos;ve been continuously improving my
             workspace in order to boost my productivity. Whenever I upload new
             content, people ask me what tools I use. So, here is a living
             snapshot and a place to point curious developers to when I get
@@ -56,8 +56,14 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
                       aspectRatio={2.0}
                       alt="Thumbnail"
                     />
-                    <div class="mt-3 text-xl">{post.frontmatter.title}</div>
-                    <div class="opacity-70">{post.frontmatter.description}</div>
+                    <div class="mt-3 text-xl font-bold">
+                      {post.frontmatter.title}
+                    </div>
+                    {post.frontmatter.description && (
+                      <div class="opacity-70">
+                        {post.frontmatter.description}
+                      </div>
+                    )}
                   </a>
                 </li>
               ))

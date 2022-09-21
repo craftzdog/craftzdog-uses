@@ -48,7 +48,9 @@ const posts = (await Astro.glob('../pages/posts/*.md'))
                       aspectRatio={2.0}
                       alt="Thumbnail"
                     />
-                    <div class="mt-3 text-xl">{post.frontmatter.title}</div>
+                    <div class="mt-3 text-xl font-bold">
+                      {post.frontmatter.title}
+                    </div>
                     <div>{post.frontmatter.description}</div>
                   </a>
                 </li>
