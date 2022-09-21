@@ -3,7 +3,11 @@ import React, { Fragment } from 'react'
 import { IoMenu } from 'react-icons/io5/index.js'
 import DropdownMenuItem from './DropdownMenuItem'
 
-export default function DropdownMenu() {
+interface Props {
+  tags: string[]
+}
+
+export default function DropdownMenu({ tags }: Props) {
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
@@ -29,13 +33,16 @@ export default function DropdownMenu() {
             <div className="px-3 py-2 uppercase font-bold text-xs">
               Categories
             </div>
-            <DropdownMenuItem href="/categories/computing">
-              Computing
-            </DropdownMenuItem>
-            <DropdownMenuItem href="/categories/desk">Desk</DropdownMenuItem>
-            <DropdownMenuItem href="/categories/videography">
-              Videography
-            </DropdownMenuItem>
+            {tags.map(tag => {
+              return (
+                <DropdownMenuItem
+                  key={tag}
+                  href={`/categories/${tag.toLowerCase()}`}
+                >
+                  {tag}
+                </DropdownMenuItem>
+              )
+            })}
           </div>
         </Menu.Items>
       </Transition>

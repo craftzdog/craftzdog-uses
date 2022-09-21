@@ -5,6 +5,13 @@ import { IoLogoGithub } from 'react-icons/io5/index.js'
 import FootprintIcon from './icons/footprint'
 import ThemeToggle from './ThemeToggleButton'
 import DropdownMenu from './DropdownMenu'
+
+const allPosts = await Astro.glob('../pages/posts/*.md')
+const allTags = new Set<string>()
+allPosts.map(post => {
+  post.frontmatter.tags &&
+    post.frontmatter.tags.map((tag: string) => allTags.add(tag))
+})
 ---
 
 <header class="fixed w-full p-2 z-20 backdrop-blur-md">
@@ -25,7 +32,7 @@ import DropdownMenu from './DropdownMenu'
       </div>
       <div class="flex-1"></div>
       <ThemeToggle client:visible />
-      <DropdownMenu client:visible />
+      <DropdownMenu client:visible tags={Array.from(allTags)} />
     </nav>
   </div>
 </header>
