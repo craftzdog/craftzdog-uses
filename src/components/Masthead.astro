@@ -1,3 +1,10 @@
+---
+const isProd = import.meta.env.PROD
+const baseAssetUrl = isProd
+  ? 'https://craftzdog.global.ssl.fastly.net/uses'
+  : ''
+---
+
 <section class="relative mb-6 h-80 flex justify-center items-center">
   <div class="absolute w-full h-full overflow-hidden">
     <video
@@ -7,8 +14,14 @@
       muted="muted"
       loop="loop"
       playsinline
-      ><source src="/masthead.webm" type="video/webm; codecs=vp9" />
-      <source src="/masthead.m4v" type="video/mp4; codecs=hvc1" />
+      ><source
+        src={baseAssetUrl + '/masthead.webm'}
+        type="video/webm; codecs=vp9"
+      />
+      <source
+        src={baseAssetUrl + '/masthead.m4v'}
+        type="video/mp4; codecs=hvc1"
+      />
     </video>
   </div>
   <div class="z-10 text-center px-8 drop-shadow-lg shadow-black">
