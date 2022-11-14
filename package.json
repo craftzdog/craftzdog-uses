@@ -21,7 +21,8 @@
     "astro": "^1.2.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "sharp": "^0.31.2"
   },
   "devDependencies": {
     "@inkdropapp/live-export": "^0.1.8",
