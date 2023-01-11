@@ -27,7 +27,7 @@ const posts = (await Astro.glob('../pages/posts/*.md'))
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={category + ` / ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
   </head>
   <Body>
     <Header title={SITE_TITLE} />
