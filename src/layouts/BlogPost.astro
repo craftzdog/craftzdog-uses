@@ -4,6 +4,7 @@ import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import Body from '../components/Body.astro'
 import Content from '../components/Content.astro'
+import { SITE_TITLE } from '../config'
 
 export interface Props {
   content: {
@@ -24,7 +25,7 @@ const {
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <BaseHead title={title} description={description} image={heroImage} />
+    <BaseHead title={title + ` / ${SITE_TITLE}`} description={description} image={heroImage} />
   </head>
 
   <Body>
