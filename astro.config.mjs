@@ -17,7 +17,6 @@ export default defineConfig({
     tailwind()
   ],
   markdown: {
-    extendDefaultPlugins: true,
     rehypePlugins: [
       [
         addClasses,
