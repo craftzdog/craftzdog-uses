@@ -533,12 +533,12 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
 
-"@inkdropapp/live-export@^0.1.8":
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/@inkdropapp/live-export/-/live-export-0.1.8.tgz#ba3548729d79142efa16b9596f075949bfb4acb5"
-  integrity sha512-RTMDbgHr6iHVft9BiUUgbgjX/1o3MyQP9Uj1t3A1jWkaw/b5ZcKtjigef+RBmleqQH1hDSq296xZplXfq5ZFxA==
+"@inkdropapp/live-export@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@inkdropapp/live-export/-/live-export-0.2.0.tgz#ab29b0d04bfcd5bf9b3145be4d6fb7545f95d769"
+  integrity sha512-7a4QLFciZ2gPe1ga/A+lBxAy9H+GvQjTlvM4KUgIPn7ltxEYq2SJ5C0zhyCUkYclmE1xZ3rmK1DXIE27q8UQtg==
   dependencies:
-    ajv "^8.11.0"
+    ajv "^8.12.0"
     debug "^4.3.4"
     inkdrop-model "^2.7.1"
     js-yaml "^4.1.0"
@@ -546,7 +546,7 @@
     remark-parse "^10.0.1"
     remark-stringify "^10.0.2"
     unified "^10.1.2"
-    unist-util-visit "^4.1.1"
+    unist-util-visit "^4.1.2"
 
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
@@ -865,7 +865,7 @@ ajv@^6.10.0, ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ajv@^8.11.0:
+ajv@^8.12.0:
   version "8.12.0"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.12.0.tgz#d1a0527323e22f53562c567c00991577dfbe19d1"
   integrity sha512-sRu1kpcO9yLtYxBKvqfTeh9KzZEwO3STyX1HT+4CaDzC6HpTGYhIhPIzj9XuKU7KYDwnaeh5hcOwjy1QuJzBPA==
@@ -4147,10 +4147,19 @@ unist-util-visit-parents@^5.0.0, unist-util-visit-parents@^5.1.1:
     "@types/unist" "^2.0.0"
     unist-util-is "^5.0.0"
 
-unist-util-visit@^4.0.0, unist-util-visit@^4.1.0, unist-util-visit@^4.1.1:
+unist-util-visit@^4.0.0, unist-util-visit@^4.1.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-4.1.1.tgz#1c4842d70bd3df6cc545276f5164f933390a9aad"
   integrity sha512-n9KN3WV9k4h1DxYR1LoajgN93wpEi/7ZplVe02IoB4gH5ctI1AaF2670BLHQYbwj+pY83gFtyeySFiyMHJklrg==
+  dependencies:
+    "@types/unist" "^2.0.0"
+    unist-util-is "^5.0.0"
+    unist-util-visit-parents "^5.1.1"
+
+unist-util-visit@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-4.1.2.tgz#125a42d1eb876283715a3cb5cceaa531828c72e2"
+  integrity sha512-MSd8OUGISqHdVvfY9TPhyK2VdUrPgxkUtWSuMHF6XAAFuL4LokseigBnZtPnJMu+FbynTkFNnFlyjxpVKujMRg==
   dependencies:
     "@types/unist" "^2.0.0"
     unist-util-is "^5.0.0"
