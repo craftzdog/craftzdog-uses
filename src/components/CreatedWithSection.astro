@@ -1,5 +1,5 @@
 ---
-import { Image } from '@astrojs/image/components'
+import { Image } from 'astro:assets';
 ---
 
 <section>
@@ -15,7 +15,7 @@ import { Image } from '@astrojs/image/components'
           class="border border-slate-300 dark:border-zinc-700 rounded-xl"
           src="/inkdrop-banner.jpg"
           width={720 * 2}
-          aspectRatio={2.0}
+          height={720}
           alt="Inkdrop banner"
         />
         <div class="mt-3 text-xl">Inkdrop</div>
@@ -28,7 +28,7 @@ import { Image } from '@astrojs/image/components'
           class="border border-slate-300 dark:border-zinc-700 rounded-xl"
           src="/astrojs.jpg"
           width={720 * 2}
-          aspectRatio={2.0}
+          height={720}
           alt="AstroJS banner"
         />
 

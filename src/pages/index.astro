@@ -1,14 +1,18 @@
 ---
+import type { ImageMetadata } from 'astro';
 import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import { SITE_TITLE, SITE_DESCRIPTION, HOMEPAGE_URL } from '../config'
 import Body from '../components/Body.astro'
 import Content from '../components/Content.astro'
-import { IoArrowForward } from 'react-icons/io5/index.js'
+import { IoArrowForward } from 'react-icons/io5'
 import Masthead from '../components/Masthead.astro'
-import { Image } from '@astrojs/image/components'
+import { Image } from 'astro:assets';
 import CreatedWithSection from '../components/CreatedWithSection.astro'
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
+console.log('images:', images)
 
 const posts = (await Astro.glob('./posts/*.md')).sort(
   (a: any, b: any) =>
@@ -46,14 +50,17 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
         <section>
           <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
             {
-              posts.map(post => (
+              posts.map(post => {
+                const heroImageAsset = images[post.frontmatter.heroImage]
+                const heroImageSrc =  heroImageAsset ? heroImageAsset() : post.frontmatter.heroImage
+                return (
                 <li class="text-center mb-4">
                   <a href={post.url}>
                     <Image
                       class="border border-slate-300 dark:border-zinc-700 rounded-xl"
-                      src={post.frontmatter.heroImage}
-                      width={720 * 2}
-                      aspectRatio={2.0}
+                      src={heroImageSrc}
+                      width={720}
+                      height={720 / 1.777}
                       alt="Thumbnail"
                     />
                     <div class="mt-3 text-xl font-bold">
@@ -66,7 +73,8 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
                     )}
                   </a>
                 </li>
-              ))
+              )
+              })
             }
           </ul>
         </section>
