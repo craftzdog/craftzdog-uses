@@ -2319,11 +2319,6 @@ inkdrop-model@^2.7.1:
   resolved "https://registry.npmjs.org/inkdrop-model/-/inkdrop-model-2.7.1.tgz"
   integrity sha512-9Y7L04Y83Y1KAwuqZrsmXbsqV6OcgS8/sDeR9HCOQE6exiMw22uh55FBSLL6Xbc6EwT/dwkDPeAZg5PL1jyXJQ==
 
-install@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.npmjs.org/install/-/install-0.13.0.tgz"
-  integrity sha512-zDml/jzr2PKU9I8J/xyZBQn8rPCAY//UOYNmR01XwNwyfhEWObo2SWfSl1+0tm1u6PhxLwDnfsT/6jB7OUxqFA==
-
 is-arrayish@^0.3.1:
   version "0.3.2"
   resolved "https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.3.2.tgz"
