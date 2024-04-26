@@ -18,7 +18,6 @@
     "@astrojs/tailwind": "^5.1.0",
     "@headlessui/react": "^1.7.19",
     "astro": "^4.7.0",
-    "install": "^0.13.0",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
     "react-icons": "^5.1.0",
