@@ -5,7 +5,7 @@ public: true
 layout: ../../layouts/BlogPost.astro
 title: MacBook Air (M2)
 createdAt: 1663220312000
-updatedAt: 1663744987940
+updatedAt: 1714109481991
 tags:
   - Computing
 heroImage: /posts/macbook-air_thumbnail.jpg

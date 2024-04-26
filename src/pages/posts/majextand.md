@@ -4,7 +4,7 @@ public: true
 layout: ../../layouts/BlogPost.astro
 title: Majextand
 createdAt: 1679637675890
-updatedAt: 1679639345601
+updatedAt: 1714109407177
 tags:
   - Computing
 heroImage: /posts/majextand_thumbnail.jpg
