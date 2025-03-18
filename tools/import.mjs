@@ -1,3 +1,4 @@
+import fs from 'node:fs'
 import './env.mjs'
 import { LiveExporter, toKebabCase } from '@inkdropapp/live-export'
 
@@ -12,6 +13,10 @@ const liveExport = new LiveExporter({
 
 const basePath = `./src/pages/posts`
 const publicPath = `./public/posts`
+
+if (!fs.existsSync(publicPath)) {
+  fs.mkdirSync(publicPath, { recursive: true })
+}
 
 await liveExport.start({
   live: true,
