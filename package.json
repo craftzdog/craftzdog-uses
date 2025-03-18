@@ -12,22 +12,22 @@
     "live-import": "node --experimental-vm-modules tools/import.mjs"
   },
   "dependencies": {
-    "@astrojs/react": "4.1.5",
-    "@astrojs/rss": "4.0.11",
-    "@astrojs/sitemap": "3.2.1",
-    "@astrojs/tailwind": "5.1.4",
-    "@headlessui/react": "^2.1.2",
-    "astro": "5.1.7",
-    "react": "^18.3.0",
-    "react-dom": "^18.3.0",
-    "react-icons": "^5.1.0",
-    "tailwindcss": "^3.4.3"
+    "@astrojs/react": "^4.2.1",
+    "@astrojs/rss": "^4.0.11",
+    "@astrojs/sitemap": "^3.2.1",
+    "@headlessui/react": "^2.2.0",
+    "@tailwindcss/vite": "^4.0.14",
+    "astro": "^5.5.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "tailwindcss": "^4.0.14"
   },
   "devDependencies": {
-    "@astrojs/check": "0.9.4",
+    "@astrojs/check": "^0.9.4",
     "@inkdropapp/live-export": "^0.2.1",
-    "@types/react": "^18.3.4",
-    "dotenv": "^16.4.5",
-    "typescript": "^5.5.4"
+    "@types/react": "^19.0.11",
+    "dotenv": "^16.4.7",
+    "typescript": "^5.8.2"
   }
 }

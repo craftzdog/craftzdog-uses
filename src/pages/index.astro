@@ -14,7 +14,7 @@ import CreatedWithSection from '../components/CreatedWithSection.astro'
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
 console.log('images:', images)
 
-const posts = (await Astro.glob('./posts/*.md')).sort(
+const posts = Object.values(import.meta.glob('./posts/*.md', {eager: true})).sort(
   (a: any, b: any) =>
     new Date(b.frontmatter.createdAt).valueOf() -
     new Date(a.frontmatter.createdAt).valueOf()
