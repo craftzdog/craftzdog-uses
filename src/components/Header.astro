@@ -5,8 +5,9 @@ import { IoLogoGithub } from 'react-icons/io5'
 import FootprintIcon from './icons/footprint'
 import ThemeToggle from './ThemeToggleButton'
 import DropdownMenu from './DropdownMenu'
+import type { Post } from '../posts'
 
-const allPosts = Object.values(import.meta.glob('../pages/posts/*.md', {eager: true}))
+const allPosts = Object.values(import.meta.glob<Post>('../pages/posts/*.md', {eager: true}))
 const allTags = new Set<string>()
 allPosts.map(post => {
   post.frontmatter.tags &&

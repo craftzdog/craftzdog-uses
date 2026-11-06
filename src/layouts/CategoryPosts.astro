@@ -8,6 +8,7 @@ import Footer from '../components/Footer.astro'
 import Header from '../components/Header.astro'
 import Masthead from '../components/Masthead.astro'
 import { SITE_DESCRIPTION, SITE_TITLE } from '../config'
+import type { Post } from '../posts'
 
 export interface Props {
   category: string
@@ -15,7 +16,7 @@ export interface Props {
 
 const { category } = Astro.props
 
-const posts = (Object.values(import.meta.glob('../pages/posts/*.md', {eager: true})))
+const posts = (Object.values(import.meta.glob<Post>('../pages/posts/*.md', {eager: true})))
   .sort(
     (a, b) =>
       new Date(b.frontmatter.createdAt).valueOf() -

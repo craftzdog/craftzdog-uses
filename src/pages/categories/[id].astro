@@ -1,8 +1,9 @@
 ---
 import CategoryPosts from '../../layouts/CategoryPosts.astro'
+import type { Post } from '../../posts'
 
 export async function getStaticPaths() {
-  const allPosts = Object.values(import.meta.glob('../posts/*.md', { eager: true }))
+  const allPosts = Object.values(import.meta.glob<Post>('../posts/*.md', { eager: true }))
   const allTags = new Set<string>()
   allPosts.map(post => {
     post.frontmatter.tags &&
