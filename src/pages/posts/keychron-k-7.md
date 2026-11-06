@@ -3,7 +3,7 @@ description: Low-profile wireless keyboard
 public: true
 layout: ../../layouts/BlogPost.astro
 title: Keychron K7
-createdAt: 1700143334904
+createdAt: 1793887334000
 updatedAt: 1793975876421
 tags:
   - Computing
