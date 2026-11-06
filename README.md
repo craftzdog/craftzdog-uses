@@ -15,11 +15,22 @@ Watch how I built this website on YouTube:
 ## Stack
 
 - [Astro](https://astro.build/) - Static Website Framework
-- [Tailwind CSS](https://tailwindui.com/) - CSS Framework
+- [Tailwind CSS](https://tailwindcss.com/) - CSS Framework
 - [React](https://reactjs.org/) - Component-based UI framework for JS
 - [Headless UI](https://headlessui.com/) - Unstyled interactive components
 - [React Icons](https://react-icons.github.io/react-icons/) - Icon set
 - [Inkdrop](https://www.inkdrop.app/) - Markdown note-taking app, for writing the blog content (optional)
+
+## Getting Started
+
+This project uses [pnpm](https://pnpm.io/) 12 (pinned via `packageManager` in `package.json`).
+
+```sh
+pnpm install      # install dependencies
+pnpm dev          # start the dev server at http://localhost:4321
+pnpm build        # build the static site into ./dist
+pnpm astro check  # type-check .astro and .ts files
+```
 
 ## Project Structure
 
@@ -36,7 +47,8 @@ PROJECT_ROOT
 │   ├── pages           # page files
 │   │   ├── categories  # category pages
 │   │   └── posts       # .md files
-│   └── styles          # global stylesheets
+│   ├── styles          # global stylesheets
+│   └── posts.ts        # frontmatter type of the posts
 └── tools               # Inkdrop integration
 ```
 
@@ -57,7 +69,7 @@ INKDROP_BOOKID='***'
 Then, run the following command:
 
 ```sh
-npm run live-import
+pnpm live-import
 ```
 
 ## License
